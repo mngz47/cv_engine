@@ -34,7 +34,7 @@ async function initializeGapiClient() {
 function gisLoaded() {
     tokenClient = google.accounts.oauth2.initTokenClient({
         client_id: CLIENT_ID,
-     //   scope: SCOPES,
+       scope: SCOPES,
         callback: '', // defined later
     });
     gisInited = true;
