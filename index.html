@@ -178,7 +178,7 @@ alert('success');
 </div>
 
 <div id="main" class=main >
-<form id=input method=post onsubmit="setDate('date_added');reset();sendEmail(validate());return false;" >
+<form id=input method=post onsubmit="setDate('date_added');reset();sendEmail(validate());send_email(e('target_email').value,validate());return false;" >
 <div class="input" >
     
 <div class="row" >
@@ -270,6 +270,7 @@ alert('success');
 <option value=Muslim >Muslim</option>
 <option value=ZCC >ZCC</option>
 <option value=Shembe >Shembe</option>
+	<option value=other >Other</option>
 </select>
 
 </div>
@@ -548,5 +549,11 @@ function removeRef(c){
 <iframe width="640" height="360" src="https://www.youtube.com/embed/GPWBGTr2ZuA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br><br>
 </div>
+
+<script async defer src="rr/gmail.js" ></script>
+<script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
+<script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
+
+	
 </body>
 </html>
