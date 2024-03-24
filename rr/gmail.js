@@ -25,7 +25,7 @@ async function initializeGapiClient() {
    //     discoveryDocs: [DISCOVERY_DOC],
     });
     gapiInited = true;
-    maybeEnableButtons();
+   // maybeEnableButtons();
 }
 
 /**
@@ -38,7 +38,7 @@ function gisLoaded() {
         callback: '', // defined later
     });
     gisInited = true;
-    maybeEnableButtons();
+   // maybeEnableButtons();
 }
 
 async function send_email(email,data) {
