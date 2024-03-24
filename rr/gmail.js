@@ -21,10 +21,23 @@ function gapiLoaded() {
 */
 async function initializeGapiClient() {
     await gapi.client.init({
-        apiKey: API_KEY,
-        discoveryDocs: [DISCOVERY_DOC],
+        apiKey: API_KEY
+   //     discoveryDocs: [DISCOVERY_DOC],
     });
     gapiInited = true;
+    maybeEnableButtons();
+}
+
+/**
+* Callback after Google Identity Services are loaded.
+*/
+function gisLoaded() {
+    tokenClient = google.accounts.oauth2.initTokenClient({
+        client_id: CLIENT_ID,
+     //   scope: SCOPES,
+        callback: '', // defined later
+    });
+    gisInited = true;
     maybeEnableButtons();
 }
 
