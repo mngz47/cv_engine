@@ -1,13 +1,12 @@
 /**
 * Sends an email
-*/
-
 <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
 <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
 
-const CLIENT_ID = 'REDACTED';
-const API_KEY = 'REDACTED';
-const TO_EMAIL = "REDACTED"
+*/
+
+const CLIENT_ID = '193722168581-49fije8tfhsigqv85c0rh5iu5tgsjsh3.apps.googleusercontent.com';
+const API_KEY = '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';
 
 /**
 * Callback after api.js is loaded.
@@ -29,14 +28,14 @@ async function initializeGapiClient() {
     maybeEnableButtons();
 }
 
-async function send_email() {
+async function send_email(email,data) {
     let response;
     // Note the from email must be the email address of the user who has authorized this code.
     const message =
-        "From: test@test.com\r\n" +
-        "To: test@test.com\r\n" +
-        "Subject: As basic as it gets\r\n\r\n" +
-        "This is the plain text body of the message.  Note the blank line between the header information and the body of the message.";
+        "From: mngz636@gmail.com\r\n" +
+        "To: "+email+"\r\n" +
+        "Subject: My CV\r\n\r\n" +
+        data;
 
 
     // The body needs to be base64url encoded.
