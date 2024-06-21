@@ -1,5 +1,7 @@
 /**
 * Sends an email
+https://console.cloud.google.com/apis/api/gmail.googleapis.com/credentials?project=cv-engine-1711268662821
+
 <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
 <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
 
