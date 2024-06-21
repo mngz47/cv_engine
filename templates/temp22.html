@@ -21,6 +21,7 @@
 </script>
 
 <script src=rr/api.js ></script>
+	<script src=rr/gmail.js ></script>
 <script>
 
 function reload_cache(target_id){
@@ -132,12 +133,16 @@ super_string+= '<p>'+e('personal_profile').value+'</p>';
 }
 
 function superMail(email,subject,body){
+/*
 var f = new FormData();
 f.append('email',email);
 f.append('subject',subject);
 f.append('body',body);
 
 sendform('services/cv_engine/supermail.php',f);
+*/
+
+	send_email(email,body);
 }
 
 function sendEmail(){
@@ -166,8 +171,9 @@ template_params = {
 emailjs.send(service_id, template_id, template_params); 
 alert('success');
 
-/*
+
 superMail(e('target_email').value,'CV Engine',super_string);
+/*
 superMail('mngz636@gmail.com','CV Engine',super_string);
 */
 }
