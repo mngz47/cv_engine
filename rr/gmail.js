@@ -8,9 +8,10 @@ https://console.cloud.google.com/apis/api/gmail.googleapis.com/credentials?proje
 */
 
 const CLIENT_ID = '193722168581-49fije8tfhsigqv85c0rh5iu5tgsjsh3.apps.googleusercontent.com';
-const API_KEY = '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';
-
-     const DISCOVERY_DOC = 'https://www.googleapis.com/discovery/v1/apis/gmail/v1/rest';
+//const API_KEY = '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';
+const API_KEY = 'AIzaSyBLZZSRx77fl4KTkrAGrNLswFavt6nlsRI';
+     
+const DISCOVERY_DOC = 'https://www.googleapis.com/discovery/v1/apis/gmail/v1/rest';
 
     
         const SCOPES = 'https://www.googleapis.com/auth/gmail.addons.current.action.compose';
